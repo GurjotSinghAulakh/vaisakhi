@@ -1,32 +1,11 @@
 import { useContext, useEffect, useState } from "react";
 import { LanguageContext } from "./LanguageProvider";
 
-const translations = [
-  {
-    language: "no",
-    tittel: "Turbandagen",
-    undertittel: "Undertittel",
-    tekst:
-      "Bla bla bla, bla bla. Bla bla bla bla bla, bla bla bla bla bla bla. Derfor, bla bla bla, og bla bla. Vi bla bla bla, hvor bla blabla blababa bla. Derfor, bla bla bla, og bla bla. Vi bla bla bla, hvor bla blabla blababa bla. Derfor, bla bla bla, og bla bla. Vi bla bla bla, hvor bla blabla blababa bla.",
-  },
-  {
-    language: "pu",
-    tittel: "Turbandagen PU",
-    undertittel: "Undertittel PU",
-    tekst:
-      "Bla bla bla, bla bla. Bla bla bla bla bla, bla bla bla bla bla bla. Derfor, bla bla bla, og bla bla. Vi bla bla bla, hvor bla blabla blababa bla. Derfor, bla bla bla, og bla bla. Vi bla bla bla, hvor bla blabla blababa bla. Derfor, bla bla bla, og bla bla. Vi bla bla bla, hvor bla blabla blababa bla.",
-  },
-  {
-    language: "en",
-    tittel: "Turbandagen EN",
-    undertittel: "Undertittel EN",
-    tekst:
-      "Bla bla bla, bla bla. Bla bla bla bla bla, bla bla bla bla bla bla. Derfor, bla bla bla, og bla bla. Vi bla bla bla, hvor bla blabla blababa bla. Derfor, bla bla bla, og bla bla. Vi bla bla bla, hvor bla blabla blababa bla. Derfor, bla bla bla, og bla bla. Vi bla bla bla, hvor bla blabla blababa bla.",
-  },
-];
-
-const Hero = () => {
+const Hero = ({ translations }) => {
   const { language } = useContext(LanguageContext);
+  if (!translations) {
+    return "Loading ...";
+  }
   const currentTranslation = translations.find((t) => t.language === language);
 
   return (
@@ -36,6 +15,8 @@ const Hero = () => {
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl font-bold">{currentTranslation.tittel}</h1>
             <p className="text-xl mt-2">{currentTranslation.undertittel}</p>
+            <img src="/logo-light.png" width="200" className="block mx-auto" />
+            <audio src="/audio.mp3" controls className="block mx-auto"/>
             <p className="mt-4">{currentTranslation.tekst}</p>
           </div>
         ) : (

@@ -719,6 +719,9 @@ video {
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 5;
 }
+.block {
+  display: block;
+}
 .flex {
   display: flex;
 }
