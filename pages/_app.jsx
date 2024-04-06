@@ -1,3 +1,5 @@
+"use client";
+
 import LanguageProvider, {
   LanguageContext,
 } from "@/components/LanguageProvider";

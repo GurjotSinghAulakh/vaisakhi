@@ -680,9 +680,6 @@ video {
 .mb-4 {
   margin-bottom: 1rem;
 }
-.mb-6 {
-  margin-bottom: 1.5rem;
-}
 .mb-7 {
   margin-bottom: 1.75rem;
 }
@@ -761,9 +758,6 @@ video {
 .h-\[11px\] {
   height: 11px;
 }
-.h-\[2px\] {
-  height: 2px;
-}
 .h-\[300px\] {
   height: 300px;
 }
@@ -839,9 +833,6 @@ video {
 .w-\[1px\] {
   width: 1px;
 }
-.w-\[30px\] {
-  width: 30px;
-}
 .w-\[54px\] {
   width: 54px;
 }
@@ -857,17 +848,11 @@ video {
 .max-w-\[166px\] {
   max-width: 166px;
 }
-.max-w-\[400px\] {
-  max-width: 400px;
-}
 .max-w-\[424px\] {
   max-width: 424px;
 }
 .max-w-\[70px\] {
   max-width: 70px;
-}
-.max-w-md {
-  max-width: 28rem;
 }
 .max-w-xl {
   max-width: 36rem;
@@ -1064,23 +1049,14 @@ video {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
-.bg-contact_illustration_light {
-  background-image: url(/contact/illustration-light.svg);
-}
 .bg-hero {
   background-image: url(/hero/hero-bg.png);
-}
-.bg-contain {
-  background-size: contain;
 }
 .bg-cover {
   background-size: cover;
 }
 .bg-bottom {
   background-position: bottom;
-}
-.bg-top {
-  background-position: top;
 }
 .bg-no-repeat {
   background-repeat: no-repeat;
@@ -1725,9 +1701,6 @@ body::-webkit-scrollbar {
  .dark\:bg-zinc-800\/10:is(.dark *) {
   background-color: rgb(39 39 42 / 0.1);
 }
- .dark\:bg-contact_illustration_dark:is(.dark *) {
-  background-image: url(/contact/illustration-dark.svg);
-}
  .dark\:bg-none:is(.dark *) {
   background-image: none;
 }
@@ -1841,14 +1814,6 @@ body::-webkit-scrollbar {
     margin-top: 2rem;
   }
 
-  .xl\:flex {
-    display: flex;
-  }
-
-  .xl\:h-\[480px\] {
-    height: 480px;
-  }
-
   .xl\:h-\[auto\] {
     height: auto;
   }
@@ -1880,10 +1845,6 @@ body::-webkit-scrollbar {
   .xl\:gap-x-8 {
     -moz-column-gap: 2rem;
          column-gap: 2rem;
-  }
-
-  .xl\:gap-y-14 {
-    row-gap: 3.5rem;
   }
 
   .xl\:gap-y-24 {
@@ -1922,11 +1883,6 @@ body::-webkit-scrollbar {
 
   .xl\:text-left {
     text-align: left;
-  }
-
-  .xl\:text-lg {
-    font-size: 1.125rem;
-    line-height: 1.75rem;
   }
 
   .xl\:dark\:bg-work_project_bg_dark:is(.dark *) {
