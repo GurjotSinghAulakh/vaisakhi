@@ -1,19 +1,33 @@
-import { useContext } from "react";
-import LanguageContext from "./LanguageContext";
+import { useContext, useEffect, useState } from "react";
+import { LanguageContext } from "./LanguageProvider";
 
 const translations = [
-  { language: "no", tittel: "Turbandagen", undertittel: "Undertittel", tekst: "Bla bla bla, bla bla. Bla bla bla bla bla, bla bla bla bla bla bla. Derfor, bla bla bla, og bla bla. Vi bla bla bla, hvor bla blabla blababa bla. Derfor, bla bla bla, og bla bla. Vi bla bla bla, hvor bla blabla blababa bla. Derfor, bla bla bla, og bla bla. Vi bla bla bla, hvor bla blabla blababa bla.", },
-  { language: "pu", tittel: "Turbandagen PU", undertittel: "Undertittel PU", tekst: "Bla bla bla, bla bla. Bla bla bla bla bla, bla bla bla bla bla bla. Derfor, bla bla bla, og bla bla. Vi bla bla bla, hvor bla blabla blababa bla. Derfor, bla bla bla, og bla bla. Vi bla bla bla, hvor bla blabla blababa bla. Derfor, bla bla bla, og bla bla. Vi bla bla bla, hvor bla blabla blababa bla.", },
-  { language: "en", tittel: "Turbandagen EN", undertittel: "Undertittel EN", tekst: "Bla bla bla, bla bla. Bla bla bla bla bla, bla bla bla bla bla bla. Derfor, bla bla bla, og bla bla. Vi bla bla bla, hvor bla blabla blababa bla. Derfor, bla bla bla, og bla bla. Vi bla bla bla, hvor bla blabla blababa bla. Derfor, bla bla bla, og bla bla. Vi bla bla bla, hvor bla blabla blababa bla.", },
+  {
+    language: "no",
+    tittel: "Turbandagen",
+    undertittel: "Undertittel",
+    tekst:
+      "Bla bla bla, bla bla. Bla bla bla bla bla, bla bla bla bla bla bla. Derfor, bla bla bla, og bla bla. Vi bla bla bla, hvor bla blabla blababa bla. Derfor, bla bla bla, og bla bla. Vi bla bla bla, hvor bla blabla blababa bla. Derfor, bla bla bla, og bla bla. Vi bla bla bla, hvor bla blabla blababa bla.",
+  },
+  {
+    language: "pu",
+    tittel: "Turbandagen PU",
+    undertittel: "Undertittel PU",
+    tekst:
+      "Bla bla bla, bla bla. Bla bla bla bla bla, bla bla bla bla bla bla. Derfor, bla bla bla, og bla bla. Vi bla bla bla, hvor bla blabla blababa bla. Derfor, bla bla bla, og bla bla. Vi bla bla bla, hvor bla blabla blababa bla. Derfor, bla bla bla, og bla bla. Vi bla bla bla, hvor bla blabla blababa bla.",
+  },
+  {
+    language: "en",
+    tittel: "Turbandagen EN",
+    undertittel: "Undertittel EN",
+    tekst:
+      "Bla bla bla, bla bla. Bla bla bla bla bla, bla bla bla bla bla bla. Derfor, bla bla bla, og bla bla. Vi bla bla bla, hvor bla blabla blababa bla. Derfor, bla bla bla, og bla bla. Vi bla bla bla, hvor bla blabla blababa bla. Derfor, bla bla bla, og bla bla. Vi bla bla bla, hvor bla blabla blababa bla.",
+  },
 ];
 
 const Hero = () => {
-
-  const a =() => useContext(LanguageContext);
-let { language, setLanguage } = a();
-  language = "no"
-  console.log(language)
-  const currentTranslation = translations.find(t => t.language === language);
+  const { language } = useContext(LanguageContext);
+  const currentTranslation = translations.find((t) => t.language === language);
 
   return (
     <section className="py-12 xl:py-24 h-[84vh] xl:pt-28 bg-hero bg-no-repeat bg-bottom bg-cover dark:bg-none">
