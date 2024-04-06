@@ -24,7 +24,7 @@ const translations = [
     },
     {
       language: "en",
-      tittel: "1600",
+      tittel: "1665",
       undertittel: "Chakk Nanaki is constructed",
       image: "/1665.png",
       mp3: "/1665-en.mp3",
