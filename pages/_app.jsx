@@ -1,13 +1,14 @@
-import LanguageContext from '@/components/LanguageContext';
-import LanguageProvider from '@/components/LanguageProvider';
-import { useState, useEffect, useContext } from 'react';
+import LanguageProvider, {
+  LanguageContext,
+} from "@/components/LanguageProvider";
+import { useContext } from "react";
 
 function MyApp({ Component, pageProps }) {
-    let { language, setLanguage } = useContext(LanguageContext);
+  let { language, setLanguage } = useContext(LanguageContext);
 
   return (
     <LanguageProvider>
-        <Component {...pageProps} language={language}  setLanguage={setLanguage} />
+      <Component {...pageProps} language={language} setLanguage={setLanguage} />
     </LanguageProvider>
   );
 }
