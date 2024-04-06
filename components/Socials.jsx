@@ -6,6 +6,7 @@ import {
   RiGithubFill,
   RiTwitterXFill,
   RiYoutubeFill,
+  RiFacebookFill,
 } from "react-icons/ri";
 
 import Link from "next/link";
@@ -14,16 +15,12 @@ import Link from "next/link";
 
 const icons = [
   {
-    path: "https://www.instagram.com/stylish_singh01/",
+    path: "https://www.instagram.com/ungesikher/",
     name: <RiInstagramFill />,
   },
   {
-    path: "https://github.com/GurjotSinghAulakh",
-    name: <RiGithubFill />,
-  },
-  {
-    path: "https://www.linkedin.com/in/gurjotsinghaulakh/",
-    name: <RiLinkedinFill />,
+    path: "https://www.facebook.com/ungesikher/?locale=nb_NO",
+    name: <RiFacebookFill />,
   },
 ];
 

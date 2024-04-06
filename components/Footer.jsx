@@ -12,7 +12,7 @@ const footer = () => {
           />
           {/* Copyright  */}
           <div className=" text-muted-foreground">
-            Copyright &copy; Gurjot Singh Aulakh. All rights reserved.
+            Copyright &copy; Unge Sikher. All rights reserved.
           </div>
         </div>
       </div>
