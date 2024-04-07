@@ -15,7 +15,7 @@ const translations = [
     },
     {
       language: "pu",
-      tittel: "1605",
+      tittel: "1665",
       undertittel: "ਚੱਕ ਨਾਨਕੀ ਦਾ ਨਿਰਮਾਣ ਹੋਇਆ",
       image: "/1665.png",
       mp3: "",
