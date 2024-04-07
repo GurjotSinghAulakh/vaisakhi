@@ -55,17 +55,17 @@ const header = () => {
                 {language?.toUpperCase() ?? "NO"}
               </button>
               {isDropdownOpen && (
-                <ul className="absolute right-0 w-14 mt-2 bg-white shadow-lg rounded-md overflow-hidden">
-                  {["no", "pu", "en"].map((language) => (
-                    <li
-                      key={language}
-                      className="px-4 py-2 hover:bg-blue-500 hover:text-white cursor-pointer"
-                      onClick={() => handleLanguageChange(language)}
-                    >
-                      {language.toUpperCase()}
-                    </li>
-                  ))}
-                </ul>
+                  <ul className="absolute right-0 w-14 mt-2 bg-white dark:bg-black-500 shadow-lg rounded-md overflow-hidden">
+                    {["no", "pu", "en"].map((language) => (
+                      <li
+                        key={language}
+                        className="px-4 py-2 hover:bg-blue-500 hover:text-white cursor-pointer dark:text-black"
+                        onClick={() => handleLanguageChange(language)}
+                      >
+                        {language.toUpperCase()}
+                      </li>
+                    ))}
+                  </ul>
               )}
             </div>
           </div>
