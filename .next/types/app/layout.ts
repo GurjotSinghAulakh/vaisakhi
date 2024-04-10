@@ -1,4 +1,4 @@
-// File: /Users/gurjotsinghaulakh/Desktop/Vaisakhi/app/layout.jsx
+// File: /Users/gurjotsinghaulakh/Library/CloudStorage/OneDrive-NTNU/vaisakhi/app/layout.jsx
 import * as entry from '../../../app/layout.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

@@ -5,20 +5,17 @@ import { Analytics } from "@vercel/analytics/react";
 // components
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+
 // ThemeProvider
 import { ThemeProvider } from "@/components/ThemeProvider";
 import { SpeedInsights } from "@vercel/speed-insights/next";
-import LanguageProvider, {
-  LanguageContext,
-} from "@/components/LanguageProvider";
-import { useContext } from "react";
+import LanguageProvider from "@/components/LanguageProvider";
 
 const outfit = Outfit({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Portfolio | Gurjot Singh Aulakh",
-  description:
-    "I'm Gurjot Singh Aulakh, a Fullstack Developer and QA Engineer. I have a passion for technology and continuous learning. I have experience in working as a Technical Tester at SpareBank 1 Forsikring, participating in hackathons like Bouvets Penguin Battle Royale, and pursuing a Master's in Artificial Intelligence (AI).",
+  title: "Vaisakhi | Unge Sikher",
+ description: "Vaisakhi, also known as Baisakhi, is a historical and religious festival in Sikhism. It is usually celebrated on April 13 or 14 every year. Vaisakhi marks the Sikh new year and commemorates the formation of Khalsa panth of warriors under Guru Gobind Singh in 1699. It is additionally a spring harvest festival for the Sikhs."
 };
 
 export default function RootLayout({ children }) {
