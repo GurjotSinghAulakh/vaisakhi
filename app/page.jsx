@@ -10,6 +10,7 @@ const translations = [
     tittel: "Saka Anandpur da",
     undertittel: "I dag feirer vi at Khalsaen ble dannet, men hva ledet frem til det? \n Ta en dypdykk i historier knyttet til Anandpur, et sted som både former Guru Gobind Singh Ji og Khalsaen. \n Dette er Khalsaens fødested - bli bedre kjent med Anandpurs avgjørende rolle i å forsvare Guru Gobind Singh Ji og sikher fra intolerante makter. ",
     tekst: "Del 1",
+    mp3: "no/saka-anandpur-da-no.mp3",
     images: [
       { url: '/1665.png' },
       { url: '/1675.jpg' },
@@ -45,6 +46,7 @@ const translations = [
     tittel: "ਸਾਕਾ ਆਨੰਦਪੁਰ ਦਾ",
     undertittel: "ਅੱਜ ਅਸੀਂ ਖਾਲਸੇ ਦੀ ਸਥਾਪਨਾ ਦਾ ਜਸ਼ਨ ਮਨਾ ਰਹੇ ਹਾਂ, ਪਰ ਇਸਦਾ ਕਾਰਨ ਕੀ ਹੈ? \n ਅਨੰਦਪੁਰ ਨਾਲ ਜੁੜੀਆਂ ਕਹਾਣੀਆਂ ਵਿੱਚ ਡੂੰਘੀ ਡੁਬਕੀ ਲਓ, ਇੱਕ ਅਜਿਹੀ ਜਗ੍ਹਾ ਜਿਸ ਨੇ ਗੁਰੂ ਗੋਬਿੰਦ ਸਿੰਘ ਜੀ ਅਤੇ ਖਾਲਸੇ ਦੋਵਾਂ ਨੂੰ ਆਕਾਰ ਦਿੱਤਾ ਸੀ। \n ਇਹ ਜਨਮ ਅਸਥਾਨ ਹੈ। ਖਾਲਸਾ - ਗੁਰੂ ਗੋਬਿੰਦ ਸਿੰਘ ਜੀ ਅਤੇ ਸਿੱਖਾਂ ਨੂੰ ਅਸਹਿਣਸ਼ੀਲ ਸ਼ਕਤੀਆਂ ਤੋਂ ਬਚਾਉਣ ਵਿੱਚ ਆਨੰਦਪੁਰ ਦੀ ਅਹਿਮ ਭੂਮਿਕਾ ਬਾਰੇ ਜਾਣੋ।",
     tekst: "ਭਾਗ 1",
+    mp3: "",
     images: [
       { url: '/1665.png' },
       { url: '/1675.jpg' },
@@ -80,6 +82,7 @@ const translations = [
     tittel: "The Battle of Anandpur",
     undertittel: "Today we celebrate the formation of the Khalsa, but what led up to it? \n Take a deep dive into the stories associated with Anandpur, a place that shaped both Guru Gobind Singh Ji and the Khalsa. \n This is the birthplace of the Khalsa - get to know with Anandpur's crucial role in defending Guru Gobind Singh Ji and the Sikhs from intolerant powers.",
     tekst: "Part 1",
+    mp3: "en/saka-anandpur-da-en.mp3",
     images: [
       { url: '/1665.png' },
       { url: '/1675.jpg' },
@@ -140,10 +143,11 @@ export default function Home() {
             <h1 className="text-4xl font-bold py-4">{currentTranslation.tittel}</h1>
             <h3 className="text-3xl font-bold">{currentTranslation.tekst}</h3>
             <p className="text-xl mt-2">{currentTranslation.undertittel.split("\n").map((paragraph, index) => <p key={index}><br/>{paragraph}</p>)}</p>
-            <img src={images[currentImageIndex]} className="w-auto h-80 block mx-auto py-4" />            
+            <img src={images[currentImageIndex]} className="w-auto h-80 block mx-auto py-6" />            
+            {currentTranslation.mp3 !== "" && <audio src={currentTranslation.mp3} controls className="block mx-auto"/>}
             <ul className="list-none">
               {currentTranslation.pages.map((page, index) => (
-                <li key={index} className="mb-2">
+                <li key={index} className="mb-2 mt-4">
                   <a href={page.path} className="text-blue-500 dark:text-blue-300 hover:text-blue-800 dark:hover:text-blue-100 transition duration-200">{page.name}</a>
                 </li>
               ))}

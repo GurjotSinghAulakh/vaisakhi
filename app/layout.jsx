@@ -15,7 +15,7 @@ const outfit = Outfit({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Vaisakhi | Unge Sikher",
- description: "Vaisakhi, also known as Baisakhi, is a historical and religious festival in Sikhism. It is usually celebrated on April 13 or 14 every year. Vaisakhi marks the Sikh new year and commemorates the formation of Khalsa panth of warriors under Guru Gobind Singh in 1699. It is additionally a spring harvest festival for the Sikhs."
+  description: "Vaisakhi, also known as Baisakhi, is a historical and religious festival in Sikhism. It is usually celebrated on April 13 or 14 every year. Vaisakhi marks the Sikh new year and commemorates the formation of Khalsa panth of warriors under Guru Gobind Singh in 1699. It is additionally a spring harvest festival for the Sikhs."
 };
 
 export default function RootLayout({ children }) {
