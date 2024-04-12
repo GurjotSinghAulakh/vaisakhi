@@ -16,10 +16,10 @@
       "static/chunks/main-app.js",
       "static/chunks/app/page.js"
     ],
-    "/khalsas-mother/page": [
+    "/1665/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/khalsas-mother/page.js"
+      "static/chunks/app/1665/page.js"
     ],
     "/not-found": [
       "static/chunks/webpack.js",
