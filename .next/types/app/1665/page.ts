@@ -1,4 +1,4 @@
-// File: /Users/gurjotsinghaulakh/Library/CloudStorage/OneDrive-NTNU/vaisakhi/app/1665/page.jsx
+// File: /Users/gurjotsinghaulakh/Documents/VSCodeProjects/vaisakhi/app/1665/page.jsx
 import * as entry from '../../../../app/1665/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

@@ -43,8 +43,8 @@ const translations = [
   },
   {
     language: "pu",
-    tittel: "ਸਾਕਾ ਆਨੰਦਪੁਰ ਦਾ",
-    undertittel: "ਅੱਜ ਅਸੀਂ ਖਾਲਸੇ ਦੀ ਸਥਾਪਨਾ ਦਾ ਜਸ਼ਨ ਮਨਾ ਰਹੇ ਹਾਂ, ਪਰ ਇਸਦਾ ਕਾਰਨ ਕੀ ਹੈ? \n ਅਨੰਦਪੁਰ ਨਾਲ ਜੁੜੀਆਂ ਕਹਾਣੀਆਂ ਵਿੱਚ ਡੂੰਘੀ ਡੁਬਕੀ ਲਓ, ਇੱਕ ਅਜਿਹੀ ਜਗ੍ਹਾ ਜਿਸ ਨੇ ਗੁਰੂ ਗੋਬਿੰਦ ਸਿੰਘ ਜੀ ਅਤੇ ਖਾਲਸੇ ਦੋਵਾਂ ਨੂੰ ਆਕਾਰ ਦਿੱਤਾ ਸੀ। \n ਇਹ ਜਨਮ ਅਸਥਾਨ ਹੈ। ਖਾਲਸਾ - ਗੁਰੂ ਗੋਬਿੰਦ ਸਿੰਘ ਜੀ ਅਤੇ ਸਿੱਖਾਂ ਨੂੰ ਅਸਹਿਣਸ਼ੀਲ ਸ਼ਕਤੀਆਂ ਤੋਂ ਬਚਾਉਣ ਵਿੱਚ ਆਨੰਦਪੁਰ ਦੀ ਅਹਿਮ ਭੂਮਿਕਾ ਬਾਰੇ ਜਾਣੋ।",
+    tittel: "ੴ \n ਖਾਲਸਾ ਅਕਾਲ ਪੁਰਖੁ ਕੀ ਫੋਜ । ਪ੍ਰਗਟਿਯੋ ਖਾਲਸਾ ਪ੍ਰਮਾਤਮ ਕੀ ਮੌਜ਼ ॥ \n ਨਾਰਵੇ ਦੀ ਸਿੱਖ ਸਾਧਸੰਗਤ ਅੱਜ ਖਾਲਸੇ ਦਾ ਪ੍ਰਗਟਨਾ ਦਿਵਸ ਮਨਾ ਰਹੀ ਹੈ। \n ਸਾਕਾ ਅਨੰਦਪੁਰ ਸਾਹਿਬ \n",
+    undertittel: "ਜਦੋ ਅਸੀ ਅਨੰਦਪੁਰ ਸਾਹਿਬ ਦੇ ਇਤਹਾਸ ਦੀ ਡੂੰਗਾਈ ਵਿੱਚ ਨਜਰ ਮਾਰਦੇ ਹਾਂ ਤਾਂ ਸਾਡਾ ਧਿਆਨ ਗੁਰੂ ਗੋਬਿੰਦ ਸਿੰਘ ਜੀ ਅਤੇ ਖਾਲਸੇ ਦੇ ਜਨਮ ਅਸਥਾਨ ਨਾਲ ਜੁੜ ਜਾਂਦਾ ਹੈ। \n ਅਨੰਦਪੁਰ ਸਾਹਿਬ ਖਾਲਸੇ ਦੀ ਜਨਮ-ਭੂਮੀ ਹੈ। ਖਾਲਸੇ ਨੇ ਜੁਲਮ,ਅਸਹਿਣਸ਼ੀਲ ਸ਼ਕਤੀਆਂ ਵਿਰੁਧ ਆਵਾਜ਼ ਬੁਲੰਦ रीडी।", 
     tekst: "ਭਾਗ 1",
     mp3: "",
     images: [
@@ -140,7 +140,7 @@ export default function Home() {
       <div className="container mx-auto">
         {currentTranslation ? (
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl font-bold py-4">{currentTranslation.tittel}</h1>
+            <h1 className="text-4xl font-bold py-4">{currentTranslation.tittel.split("\n").map((paragraph, index) => <p key={index}><br/>{paragraph}</p>)}</h1>
             <h3 className="text-3xl font-bold">{currentTranslation.tekst}</h3>
             <p className="text-xl mt-2">{currentTranslation.undertittel.split("\n").map((paragraph, index) => <p key={index}><br/>{paragraph}</p>)}</p>
             <img src={images[currentImageIndex]} className="w-auto h-80 block mx-auto py-6" />            

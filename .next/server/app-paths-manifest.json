@@ -1,5 +1,9 @@
 {
-  "/not-found": "app/not-found.js",
-  "/1665/page": "app/1665/page.js",
-  "/page": "app/page.js"
+  "/_not-found/page": "app/_not-found/page.js",
+  "/1696/page": "app/1696/page.js",
+  "/1697/page": "app/1697/page.js",
+  "/page": "app/page.js",
+  "/1699/page": "app/1699/page.js",
+  "/panj-pyare/page": "app/panj-pyare/page.js",
+  "/khalsas-mother/page": "app/khalsas-mother/page.js"
 }
